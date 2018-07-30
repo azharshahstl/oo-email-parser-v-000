@@ -12,7 +12,7 @@ class EmailParser
   
 
   
-  def parse
+  def parse(emails)
    parsed_emails = emails.split(/\,|\s/).delete_if{|x| x == ""}.uniq
    parsed_emails
     
